@@ -1,3 +1,6 @@
+/* halfway through this project i realised i should have been using custom properties for certain colors, border &
+border colors, etc... but sadly, it was too late. will try to use custom properties from the beginning in future projects*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,7 @@ html {
     background-color: #F5E36D;
     font-family: 'Montserrat', sans-serif;
     color: rgba(0, 0, 0, 0.445);
+    font-size: 16px;
 }
 
 body {
@@ -95,4 +99,40 @@ body {
 
 .dashboard-two {
     padding-top: 2rem;
+}
+.top-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+}
+
+.top-left {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.top-right {
+    grid-column: 2;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    padding-left: 9rem;
+}
+
+input {
+    background-color: #F5E36D;
+    border: solid 1px rgba(245, 245, 245, 1);
+    padding: 0.3rem;
+    border-radius: 6px;
+    flex: 1;
+    color: rgba(0, 0, 0, 0.445);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+#bell {
+    
 }

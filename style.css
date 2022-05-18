@@ -116,6 +116,18 @@ body {
     gap: 1rem;
 }
 
+input {
+    background-color: #F5E36D;
+    border: solid 1px rgba(245, 245, 245, 1);
+    padding: 0.3rem;
+    border-radius: 6px;
+    flex: 1;
+    color: rgba(0, 0, 0, 0.445);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
 .top-right {
     grid-column: 2;
     display: grid;
@@ -147,7 +159,7 @@ body {
     display: flex;
     align-items: center;
     justify-self: start;
-    gap: 0.8rem;
+    gap: 0.6rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     font-weight: bold;
@@ -163,15 +175,67 @@ body {
     border-radius: 50%;
 }
 
-input {
-    background-color: #F5E36D;
-    border: solid 1px rgba(245, 245, 245, 1);
-    padding: 0.3rem;
-    border-radius: 6px;
-    flex: 1;
-    color: rgba(0, 0, 0, 0.445);
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    outline: none;
+.bottom-header {
+    display: grid;
+    grid-template-columns: 1fr 1.9fr;
 }
+
+.welcome-container {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.big-profile {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+#big-profile {
+    width: 4rem;
+    height: 4rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.little-text {
+    font-size: 0.8rem;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.three-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.8rem;
+    align-items: center;
+    padding-top: 1.2rem;
+}
+
+.btn {
+    text-align: center;
+    outline: none;
+    height: 3rem;
+    width: 11rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.445);
+    border: solid 1px white;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
 

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Montserrat&family=Rajdhani&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="bellWindow"> </div>
     <div class="container">
         <div class="sidebar">
                 <p class="dboard">Dashboard </p>
@@ -63,9 +64,13 @@
                         <input type="text" name="search_bar" id="search">
                     </div>
                     <div class="top-right">
-                        <img src="/home/logan/Downloads/bell.svg" alt="bell icon" class="icon" id="bell">
-                        <img src="/home/logan/Downloads/account-circle.svg" alt="profile picture" class="icon" id="profile">
-                        <p>John Doe</p>
+                        <div class="bell">
+                            <img src="/home/logan/Downloads/bell.svg" alt="bell icon" class="icon">
+                        </div>
+                        <div class="user">
+                            <img src="/home/logan/Downloads/account-circle.svg" alt="profile picture" class="icon" id="profile">
+                            <p>John Doe</p>
+                        </div>
                     </div>
             </div>
             <div class="bottom-header">
@@ -75,4 +80,5 @@
         <div class="content"></div>
     </div>
 </body>
+<script src="../dashboard/script.js"></script>
 </html>

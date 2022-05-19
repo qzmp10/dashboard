@@ -259,14 +259,18 @@ input {
 .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1.5rem 1fr;
 }
 
 .projects {
+    grid-column: 1;
+    grid-row: 2;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     align-items: center;
     justify-items: center;
 }
+
 
 .projects-right {
     display: flex;
@@ -284,13 +288,14 @@ input {
 
 .left-arrow:hover, .right-arrow:hover{
     opacity: 0.8;
+    transform: scale(1.2);
 }
 
 .slideshow {
-    background-color: red;
     grid-column: 2;
+    background-color: red;
     height: 80%;
-    width: 100%;
+    width: 90%;
     border-radius: 25px;
 }
 

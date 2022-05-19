@@ -4,6 +4,10 @@ let sidebarElements = document.querySelectorAll('.sideInfo');
 let errorWindow = document.querySelector('.errorWindow');
 let headerBtns = document.querySelectorAll('.btn');
 
+let slideShow = document.querySelector('.slideshow');
+let leftArrow = document.querySelector('.left-arrow');
+let rightArrow = document.querySelector('.right-arrow');
+
 notif.addEventListener('mouseover', () => {
     popUp.classList.add('popUp');
     popUp.textContent = "✓ No new notifications.";
@@ -35,6 +39,10 @@ headerBtns.forEach(button => {
         errorWindow.textContent = "";
     });
 });
+
+leftArrow.addEventListener('click', () => {
+    slideShow.href = "https://www.theodinproject.com/lessons/foundations-fundamentals-part-3";
+})
 
 
 

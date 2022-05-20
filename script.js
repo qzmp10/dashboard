@@ -5,11 +5,12 @@ let sidebarElements = document.querySelectorAll('.sideInfo');
 let errorWindow = document.querySelector('.errorWindow');
 let headerBtns = document.querySelectorAll('.btn');
 
+//slideshow items
 let slideShow = document.querySelector('.slideshow');
 let leftArrow = document.querySelector('.left-arrow');
 let rightArrow = document.querySelector('.right-arrow');
 
-//default project for the slideshow
+//default project link for the slideshow
 slideShow.href = "https://qzmp10.github.io/etch-a-sketch/";
 
 //slide text content
@@ -104,8 +105,10 @@ leftArrow.addEventListener('click', () => {
     }
 });
 
+
 rightArrow.addEventListener('click', () => {
 
+    //content of slide changes depending on current link & style
     if (slideShow.href == "https://qzmp10.github.io/etch-a-sketch/") {
         slideShow.classList.add('slide-transition');
         slideShow.addEventListener('transitionend', () => {

@@ -40,6 +40,7 @@ div {
     border-radius: 16px;
 }
 
+/* secondary containers */
 .sidebar {
     margin: 16px;
     background-color: #f0fd5f6b;
@@ -85,10 +86,14 @@ div {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.185);
 }
 
+/* secondary containers end */
+
+/* icon style */
 .icon {
     opacity: 0.445;
 }
 
+/* sidebar container */
 .sideInfo {
     display: flex;
     align-items: center;
@@ -107,6 +112,9 @@ div {
 .dashboard-two {
     padding-top: 2rem;
 }
+/* sidebar container end */
+
+/* header container */
 .top-header {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -257,6 +265,9 @@ input {
     opacity: 0.8;
 }
 
+/* header container end */
+
+/* content container */
 .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -339,6 +350,7 @@ input {
     transition: transform 200ms ease-in-out;
 }
 
+/* content container end */
 
 
 

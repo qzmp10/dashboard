@@ -403,6 +403,33 @@ input {
 
 /* content container end */
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 10px;
+    }
+
+    .bottom-header {
+        padding: 1.4rem;
+    }
+
+    .top-header {
+        padding: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+
+    .bottom-header {
+        padding: 1.4rem;
+    }
+
+    .top-header {
+        padding: 1.4rem;
+    }
+}
 
 
 

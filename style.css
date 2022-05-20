@@ -193,7 +193,7 @@ input {
 }
 
 .bottom-header {
-    padding-bottom: 1rem;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1.9fr;
 }
@@ -260,7 +260,16 @@ input {
 .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1.5rem 1fr;
+    grid-template-rows: 0.15fr 1fr;
+}
+
+.content > p {
+    justify-self: center;
+    align-self: flex-end;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: solid 1px;
+    padding-bottom: 0.4rem;
 }
 
 .projects {
@@ -294,6 +303,7 @@ input {
 
 .slideshow {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
@@ -307,6 +317,7 @@ input {
     width: 85%;
     border-radius: 25px;
 }
+
 .slideshow > .slide-text {
     display: flex;
     align-items: center;
